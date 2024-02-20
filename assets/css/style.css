@@ -1,13 +1,6 @@
 
 body {
   font-family: "kanit", sans-serif;
-  padding: 100px;
-  background-image: url('../img/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  padding: auto;
-  overflow: auto;
   color: #070707;
 }
 
@@ -67,7 +60,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #545454;
+  background: #070707;
   padding: 10px 0;
   font-size: 14px;
 }
@@ -111,8 +104,8 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #fff;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  
 }
 
 #header .logo h1 {
@@ -129,7 +122,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #545454;
+  color: #070707;
   text-decoration: none;
 }
 
@@ -171,7 +164,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "kanit", sans-serif;
   font-size: 14px;
   color: #545454;
   white-space: nowrap;
@@ -406,7 +399,6 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(255, 255, 255, 0.6);
   position: absolute;
   top: 0;
   right: 0;
@@ -445,7 +437,7 @@ h6 {
   width: 80%;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: arken(#545454, 15);
+  color: arken(#0a0a0a, 15);
 }
 
 #hero .carousel-inner .carousel-item {
@@ -486,7 +478,7 @@ h6 {
   line-height: 1;
   width: auto;
   height: auto;
-  color: #545454;
+  color: #070707;
 }
 
 #hero .carousel-indicators li {
@@ -497,7 +489,6 @@ h6 {
   border: 0;
   width: 12px;
   height: 12px;
-  border-radius: 50px;
   margin-bottom: 180px;
   opacity: 0.2;
 }
@@ -513,7 +504,6 @@ h6 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
   margin: 10px;
@@ -786,11 +776,11 @@ section {
 
 .services .icon-box:hover {
   background: #F26522;
-  border-color: #F26522;
+  border-color: #0c0c0c;
 }
 
 .services .icon-box:hover .icon {
-  background: #231F20;
+  background: #faf8f9;
 }
 
 .services .icon-box:hover .icon i {
@@ -866,7 +856,7 @@ section {
 .counts .count-box p {
   padding: 30px 0 0 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "kanit", sans-serif;
   font-size: 14px;
 }
 
@@ -876,7 +866,7 @@ section {
   margin-top: 20px;
   color: #231F20;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "kanit", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -953,7 +943,7 @@ section {
   font-weight: 700;
   font-size: 26px;
   color: #231F20;
-  font-family: "Poppins", sans-serif;
+  font-family: "kanit", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -2210,4 +2200,43 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+.dropbtn {
+  background: linear-gradient(to right, #333333, #F26522);
+  color: white;
+  padding: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
 }
