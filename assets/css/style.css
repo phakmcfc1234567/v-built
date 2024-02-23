@@ -2202,12 +2202,13 @@ section {
   color: #fff;
 }
 .dropbtn {
-  background: linear-gradient(to right, #333333, #F26522);
+  background: #F26522;
   color: white;
-  padding: 16px;
-  font-size: 17px;
-  border: none;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
+  border-color: #F26522;
 }
 
 .dropdown {
@@ -2231,12 +2232,12 @@ section {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #F26522;}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #000000;
+  background-color: #F26522;
 }
